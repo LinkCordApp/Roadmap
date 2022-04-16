@@ -4,6 +4,9 @@
 
 ---
 
+## Having Issues?
+Open a Issue on this Repo or join our [Discord](https://linkcord.bio/discord) and we will be happy to help. 
+
 ## Docs
 
 - [Set up](#set-up)
