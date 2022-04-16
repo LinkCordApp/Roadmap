@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: blue;
+  --dgray: #18212c;
+  --red: #ef4444;
+  --green: green;
+  --grey: gray;
+  --purple: #a5b4fc;
+  --cyan: #22d1ed;
+  --brown: #b55b14;
+  --pink: #e0bcdd;
+  --yellow: yellow;
+  --def: #fa442d;
+  --violet: #c4b5fd;
+  /* COLORS */
+  --cookie-consent-banner-colors-primary: #81c784;
+  --cookie-consent-banner-colors-primary-border: #81c784;
+  --cookie-consent-banner-colors-primary-content: #fff;
+  --cookie-consent-banner-colors-secondary: transparent;
+  --cookie-consent-banner-colors-secondary-border: #fff;
+  --cookie-consent-banner-colors-secondary-content: #fff;
+  --cookie-consent-banner-colors-background-body: rgba(25, 31, 34, 0.92);
+  --cookie-consent-banner-colors-text: #fff;
+
+  /* BORDER-RADIUS */
+  --cookie-consent-banner-border-radius-buttons: 1rem;
+  --cookie-consent-banner-border-radius-body: 0;
+
+  /* SPACINGS */
+  --cookie-consent-banner-spacings-container-padding-top: 1rem;
+  --cookie-consent-banner-spacings-container-padding-left: 1rem;
+  --cookie-consent-banner-spacings-container-padding-bottom: 1rem;
+  --cookie-consent-banner-spacings-container-padding-right: 1rem;
+
+  --cookie-consent-banner-spacings-body-padding-top: 0;
+  --cookie-consent-banner-spacings-body-padding-left: 2rem;
+  --cookie-consent-banner-spacings-body-padding-bottom: 0;
+  --cookie-consent-banner-spacings-body-padding-right: 2rem;
+
+  /* Z-INDEX */
+  --cookie-consent-banner-z-index-container: 99;
+
+  /* FONTS */
+  --cookie-consent-banner-font-family-headline: inherit;
+  --cookie-consent-banner-font-size-headline: 1.5rem;
+  --cookie-consent-banner-font-family-body: inherit;
+  --cookie-consent-banner-font-size-body: 0.875rem;
+}
+
+/** GRAY THEMES */
+[data-theme="dark"] {
+  --header_color: #1f2833;
+  --background_color: #0b0c10;
+  --primary_one: #66fcf1;
+  --primary_two: #45a29e;
+  --base_text: #ffffff;
+  --link_cord: #66fdf1;
+}
+
+[data-theme="light"] {
+  --header_color: #0b0c10;
+  --background_color: #1f2833;
+  --primary_one: #66fcf1;
+  --primary_two: #45a29e;
+  --base_text: #ffffff;
+  --link_cord: #66fdf1;
+}
+
+
+@layer utilities {
+  .text-dimmed {
+    @apply text-zinc-500 dark:text-zinc-500
+  }
+}
+
+@layer components {
+  .form-select {
+    @apply border-zinc-300 bg-transparent rounded
+    dark:border-zinc-600
+  }
+
+
+  .form-input {
+    @apply block w-full bg-transparent border-zinc-300 rounded shadow-sm
+    dark:bg-zinc-800 dark:border-zinc-600
+  }
+
+  .button {
+    @apply bg-zinc-800 text-white px-4 py-2 rounded
+    hover:opacity-60
+    dark:bg-white dark:text-zinc-900
+  }
+
+  .button-ghost {
+    @apply bg-transparent border px-4 py-2 rounded
+    hover:opacity-60
+    dark:border-zinc-600
+  }
+}
