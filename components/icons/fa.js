@@ -1,12 +1,12 @@
-import { config, library } from "@fortawesome/fontawesome-svg-core";
+import { config, library } from '@fortawesome/fontawesome-svg-core'
 import {
   faFacebook,
   faGoogle,
   faTwitter,
   faGithub,
   faDiscord,
-  faSpotify,
-} from "@fortawesome/free-brands-svg-icons";
+  faSpotify
+} from '@fortawesome/free-brands-svg-icons'
 import {
   faGlobe,
   faCircle,
@@ -32,16 +32,16 @@ import {
   faWindowClose,
   faTimes,
   faUserCircle,
-  faUserCog,
-} from "@fortawesome/free-solid-svg-icons";
-import { faClock } from "@fortawesome/free-regular-svg-icons";
+  faUserCog
+} from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
 
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import '@fortawesome/fontawesome-svg-core/styles.css'
 // Prevent Font Awesome from adding its CSS since we did it manually above:
-config.autoAddCss = false;
+config.autoAddCss = false
 
 // Import @fortawesome/free-brands-svg-icons
-library.add(faTwitter, faGithub, faDiscord, faSpotify, faGoogle, faFacebook);
+library.add(faTwitter, faGithub, faDiscord, faSpotify, faGoogle, faFacebook)
 
 // Import @fortawesome/free-solid-svg-icons
 library.add(
@@ -70,7 +70,7 @@ library.add(
   faChartBar,
   faGavel,
   faBook
-);
+)
 
 // Import @fortawesome/free-regular-svg-icons
-library.add(faClock);
+library.add(faClock)

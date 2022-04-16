@@ -51,7 +51,7 @@
 }
 
 /** GRAY THEMES */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --header_color: #1f2833;
   --background_color: #0b0c10;
   --primary_one: #66fcf1;
@@ -60,7 +60,7 @@
   --link_cord: #66fdf1;
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   --header_color: #0b0c10;
   --background_color: #1f2833;
   --primary_one: #66fcf1;
@@ -69,34 +69,32 @@
   --link_cord: #66fdf1;
 }
 
-
 @layer utilities {
   .text-dimmed {
-    @apply text-zinc-500 dark:text-zinc-500
+    @apply text-zinc-500 dark:text-zinc-500;
   }
 }
 
 @layer components {
   .form-select {
     @apply border-zinc-300 bg-transparent rounded
-    dark:border-zinc-600
+    dark:border-zinc-600;
   }
-
 
   .form-input {
     @apply block w-full bg-transparent border-zinc-300 rounded shadow-sm
-    dark:bg-zinc-800 dark:border-zinc-600
+    dark:bg-zinc-800 dark:border-zinc-600;
   }
 
   .button {
     @apply bg-zinc-800 text-white px-4 py-2 rounded
     hover:opacity-60
-    dark:bg-white dark:text-zinc-900
+    dark:bg-white dark:text-zinc-900;
   }
 
   .button-ghost {
     @apply bg-transparent border px-4 py-2 rounded
     hover:opacity-60
-    dark:border-zinc-600
+    dark:border-zinc-600;
   }
 }

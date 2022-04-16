@@ -1,17 +1,19 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GetStaticProps } from "next";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const Footer = () => {
-
   return (
     <>
       <br />
       <br />
-      <br />{" "}
-      <footer className="bg-header w-full flex mx-auto relative" aria-labelledby="footer-heading">
+      <br />{' '}
+      <footer
+        className="bg-header w-full flex mx-auto relative"
+        aria-labelledby="footer-heading"
+      >
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -25,8 +27,16 @@ const Footer = () => {
                   draggable={false}
                   alt="LinkCordLogo"
                 />
-                <a href="https://www.producthunt.com/posts/link-cord?utm_source=badge-review&utm_medium=badge&utm_souce=badge-link&#0045;cord#discussion-body" target="_blank">
-                  <img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=341545&theme=dark" alt="Link&#0032;Cord - Free&#0032;Centralized&#0032;solution&#0032;for&#0032;all&#0032;your&#0032;Link&#0032;in&#0032;Bio&#0032;needs&#0033; | Product Hunt" className="h-25 w-64" /></a>
+                <a
+                  href="https://www.producthunt.com/posts/link-cord?utm_source=badge-review&utm_medium=badge&utm_souce=badge-link&#0045;cord#discussion-body"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=341545&theme=dark"
+                    alt="Link&#0032;Cord - Free&#0032;Centralized&#0032;solution&#0032;for&#0032;all&#0032;your&#0032;Link&#0032;in&#0032;Bio&#0032;needs&#0033; | Product Hunt"
+                    className="h-25 w-64"
+                  />
+                </a>
               </span>
             </div>
             <div className="grid grid-cols-3 gap-8 mt-12 xl:col-span-2 xl:mt-0">
@@ -37,10 +47,10 @@ const Footer = () => {
                   </h3>
                   <ul className="mt-4 space-y-4">
                     <li>
-                      <Link href={"https://linkcord.bio/about"}>
+                      <Link href={'https://linkcord.bio/about'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "info-circle"]}
+                            icon={['fas', 'info-circle']}
                             className="mr-2"
                           />
                           About Us
@@ -48,10 +58,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href={"https://linkcord.bio/about#our-team"}>
+                      <Link href={'https://linkcord.bio/about#our-team'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "users"]}
+                            icon={['fas', 'users']}
                             className="mr-2"
                           />
                           Our Team
@@ -66,10 +76,10 @@ const Footer = () => {
                   </h3>
                   <ul className="mt-4 space-y-4">
                     <li>
-                      <Link href={"https://linkcord.bio/dashboard"}>
+                      <Link href={'https://linkcord.bio/dashboard'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "user-circle"]}
+                            icon={['fas', 'user-circle']}
                             className="mr-2"
                           />
                           Dashboard
@@ -77,10 +87,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href={"https://linkcord.bio/settings"}>
+                      <Link href={'https://linkcord.bio/settings'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "user-cog"]}
+                            icon={['fas', 'user-cog']}
                             className="mr-2"
                           />
                           Settings
@@ -97,10 +107,10 @@ const Footer = () => {
                   </h3>
                   <ul className="mt-4 space-y-4">
                     <li>
-                      <Link href={"https://discord.gg/C3ZuXPP7Hc"}>
+                      <Link href={'https://discord.gg/C3ZuXPP7Hc'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fab", "discord"]}
+                            icon={['fab', 'discord']}
                             className="mr-2"
                           />
                           Discord
@@ -108,10 +118,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href={"https://twitter.com/LinkCord"}>
+                      <Link href={'https://twitter.com/LinkCord'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fab", "twitter"]}
+                            icon={['fab', 'twitter']}
                             className="mr-2"
                           />
                           Twitter
@@ -126,10 +136,10 @@ const Footer = () => {
                   </h3>
                   <ul className="mt-4 space-y-4">
                     <li>
-                      <Link href={"https://linkcord.bio/terms"}>
+                      <Link href={'https://linkcord.bio/terms'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "gavel"]}
+                            icon={['fas', 'gavel']}
                             className="mr-2"
                           />
                           Terms
@@ -137,10 +147,10 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href={"https://linkcord.bio/privacy"}>
+                      <Link href={'https://linkcord.bio/privacy'}>
                         <a className="text-white hover:text-linkcord">
                           <FontAwesomeIcon
-                            icon={["fas", "book"]}
+                            icon={['fas', 'book']}
                             className="mr-2"
                           />
                           Privacy
@@ -156,10 +166,10 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href={"https://linkcord.bio/status"}>
+                    <Link href={'https://linkcord.bio/status'}>
                       <a className="text-white hover:text-linkcord">
                         <FontAwesomeIcon
-                          icon={["fas", "chart-bar"]}
+                          icon={['fas', 'chart-bar']}
                           className="mr-2"
                         />
                         Status
@@ -167,10 +177,10 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"https://linkcord.bio/blog"}>
+                    <Link href={'https://linkcord.bio/blog'}>
                       <a className="text-white hover:text-linkcord">
                         <FontAwesomeIcon
-                          icon={["fas", "book"]}
+                          icon={['fas', 'book']}
                           className="mr-2"
                         />
                         Blog
@@ -186,15 +196,15 @@ const Footer = () => {
               © {new Date().getFullYear()} Link Cord - All rights reserved.
             </p>
             <p className="mt-4 font-semibold text-center text-white">
-              <FontAwesomeIcon icon={["fas", "power-off"]} className="mr-2" />
-              Powered by{" "}
+              <FontAwesomeIcon icon={['fas', 'power-off']} className="mr-2" />
+              Powered by{' '}
               <a
                 className="text-linkcord hover:text-secondary"
                 href="https://vercel.com"
               >
                 Vercel
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a
                 className="text-linkcord hover:text-secondary"
                 href="https://nextjs.org/m"
@@ -207,7 +217,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

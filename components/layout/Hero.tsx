@@ -16,7 +16,10 @@ export default function Hero() {
       <div className="mt-6 text-center text-dimmed">
         <h1 className="text-linkcord text-3xl">Link Cord Road Map</h1>
         <br />
-        <p className="text-white">Submit a New Feature or Vote for the features you want to see in the next release.</p>
+        <p className="text-white">
+          Submit a New Feature or Vote for the features you want to see in the
+          next release.
+        </p>
       </div>
     </header>
   )
