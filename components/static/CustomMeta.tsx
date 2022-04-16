@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react'
+import Head from 'next/head'
 
 export const CustomMeta = ({ title, description, imageURL, siteName }) => {
   return (
@@ -22,5 +22,5 @@ export const CustomMeta = ({ title, description, imageURL, siteName }) => {
       <link rel="icon" type="image/png" sizes="16x16" href={imageURL} />
       <meta name="msapplication-TileImage" content={imageURL} />
     </Head>
-  );
-};
+  )
+}

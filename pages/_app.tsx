@@ -11,7 +11,7 @@ import Header from 'components/layout/Header'
 import Hero from 'components/layout/Hero'
 import { CustomMeta } from 'components/static/CustomMeta'
 
-import "../components/icons/fa";
+import '../components/icons/fa'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -28,7 +28,7 @@ export default function MyApp({ Component, pageProps }) {
               fetch(resource, init).then((res) => res.json())
           }}
         >
-          <CustomMeta 
+          <CustomMeta
             title="Roadmap • Link Cord"
             description="View, Request and Vote for features you would like to see added in Upcoming Link Cord Releases."
             imageURL="/logo.png"
@@ -36,13 +36,18 @@ export default function MyApp({ Component, pageProps }) {
           />
           <Header />
           <Hero />
-          <br /><br />
+          <br />
+          <br />
           <div className="antialiased max-w-xl mx-auto px-4">
             <main>
               <Component {...pageProps} />
             </main>
           </div>
-          <br /><br /><br /><br /><br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Footer />
 
           <ToastContainer autoClose={3000} hideProgressBar draggable={false} />
