@@ -1,37 +1,36 @@
-import Link from "next/link";
-import { Fragment, useEffect, useRef, useState } from "react";
-import cn from "classnames";
-import Image from "next/image";
-import { useClickAway } from "react-use";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Link from 'next/link'
+import { Fragment, useEffect, useRef, useState } from 'react'
+import cn from 'classnames'
+import Image from 'next/image'
+import { useClickAway } from 'react-use'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
-  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
-  const [active, setActive] = useState(false);
-  const ref = useRef(null);
-  const toggleActive = () => setActive((active) => !active);
-  useClickAway(ref, () => setActive(false));
+  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
+  const [active, setActive] = useState(false)
+  const ref = useRef(null)
+  const toggleActive = () => setActive((active) => !active)
+  useClickAway(ref, () => setActive(false))
 
-  const [hamburger, setHamburger] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileAccountExpanded, setMobileAccountExpanded] = useState(false);
+  const [hamburger, setHamburger] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [mobileAccountExpanded, setMobileAccountExpanded] = useState(false)
 
   useEffect(() => {
-    document.documentElement.style.overflow = hamburger ? "hidden" : "auto";
-  }, [hamburger]);
+    document.documentElement.style.overflow = hamburger ? 'hidden' : 'auto'
+  }, [hamburger])
 
   useEffect(() => {
     function handleResize() {
-      setHamburger(false);
+      setHamburger(false)
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <>
@@ -69,14 +68,14 @@ export default function Header() {
 
           <ul
             className={cn(
-              "md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
+              'md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto',
               mobileMenuIsOpen ? `block` : `hidden`
             )}
           >
             <li className="mt-3 md:mt-0 md:ml-6" key="Home">
               <Link href="https://linkcord.bio">
                 <a className="flex text-white hover:text-linkcord">
-                  <FontAwesomeIcon size="lg" icon={["fas", "home"]} />
+                  <FontAwesomeIcon size="lg" icon={['fas', 'home']} />
                   &nbsp;Home
                 </a>
               </Link>
@@ -84,7 +83,7 @@ export default function Header() {
             <li className="mt-3 md:mt-0 md:ml-6" key="Home">
               <Link href="https://linkcord.bio/about">
                 <a className="flex text-white hover:text-linkcord">
-                  <FontAwesomeIcon size="lg" icon={["fas", "info-circle"]} />
+                  <FontAwesomeIcon size="lg" icon={['fas', 'info-circle']} />
                   &nbsp;About
                 </a>
               </Link>
@@ -92,7 +91,7 @@ export default function Header() {
             <li className="mt-3 md:mt-0 md:ml-6" key="Support">
               <Link href="https://linkcord.bio/discord">
                 <a className="flex text-white hover:text-linkcord">
-                  <FontAwesomeIcon size="lg" icon={["fab", "discord"]} />
+                  <FontAwesomeIcon size="lg" icon={['fab', 'discord']} />
                   &nbsp;Discord
                 </a>
               </Link>
@@ -100,7 +99,7 @@ export default function Header() {
             <li className="mt-3 md:mt-0 md:ml-6" key="Status">
               <Link href="https://linkcord.bio/status">
                 <a className="flex text-white hover:text-linkcord">
-                  <FontAwesomeIcon size="lg" icon={["fas", "chart-bar"]} />
+                  <FontAwesomeIcon size="lg" icon={['fas', 'chart-bar']} />
                   &nbsp;Status
                 </a>
               </Link>
@@ -109,5 +108,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }
